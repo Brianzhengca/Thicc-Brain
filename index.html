@@ -15,10 +15,12 @@
 		  font-family: Arial, Helvetica, sans-serif;
 		  position:absolute; 
 		  top:120px; 
-		  bottom:120px; 
-		  left:0px; 
-		  right:0px; 
+		  bottom:100px; 
+		  left:500px; 
+		  right:500px; 
 		  overflow:auto;
+		  background-repeat: no-repeat;
+		  background-size=500px 500px;
 		}
 
 		.top-container {
@@ -61,13 +63,34 @@
 		   color: white;
 		   text-align: center;
 		}
+		.container {
+			-ms-overflow-style: none;  /* Internet Explorer 10+ */
+			scrollbar-width: none;  /* Firefox */
+		}
+		.container::-webkit-scrollbar { 
+			display: none;  /* Safari and Chrome */
+		}
+		.green-container {
+			background-color: pink;
+			left:120px; 
+			right:120px; 
+		}
+		html {
+		overflow: scroll;
+		overflow-x: hidden;
+		}
+		::-webkit-scrollbar {
+		width: 0px; /* remove scrollbar space /
+		background: transparent; / optional: just make scrollbar invisible /
+		}
+		
 		article, aside, figure, footer, header, hgroup, 
 		menu, nav, section { display: block; }
 		</style>
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
 	</head>
-	<body>
+	<body background="https://i.ytimg.com/vi/vq_4y28EZTg/maxresdefault.jpg">
 		<div class="w3-container w3-teal centered header">
 			<h1>
 				<b>The Chinese Barrier: The Magnuson Repeal of 1943</b>
@@ -79,11 +102,14 @@
 			<a href="https://www.google.com" class="w3-button w3-black w3-hover-blue w3-round-large">Link5</a>
 		</div>
 		<div class="body centered">
-			<h3>The Magnuson Act of 1943 was monumental in breaking the barrier of East-Asian immigration to the United States. Pushed forward by the Sino-American alliance during WWII, the legislation repealed the Chinese Exclusion Act and later led to the Immigration and Nationality Act of 1965, breaking down barriers of discriminatory foreign immigration in the U.S.</h3>
+			<div class="green-container">
+				<h4>The Magnuson Act of 1943 was monumental in breaking the barrier of East-Asian immigration to the United States. Pushed forward by the Sino-American alliance during WWII, the legislation repealed the Chinese Exclusion Act and later led to the Immigration and Nationality Act of 1965, breaking down barriers of discriminatory foreign immigration in the U.S.</h4>
+			</div>
 			<img src="https://sayingimages.com/wp-content/uploads/you-only-rive-once-chinese-meme.png" alt="ASIANS RULE!!!">
-			<h3>In conclusion, this is another blob of text below the images.</h3>
-			<br>
-			<h3>O yeah! Here is an example of embedding youtube videos!</h3>
+			<div class="green-container">
+				<h4>In conclusion, this is another blob of text below the images.</h4>
+				<h4>O yeah! Here is an example of embedding youtube videos!</h4>
+			</div>
 			<iframe width="500" height="350" src="https://www.youtube.com/embed/gswDWRQiL80" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<div class="w3-container w3-teal centered footer" style="position:absolute; bottom:0px; height:120px; left:0px; right:0px; overflow:hidden;">

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>This is a Test</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		.container {
+		  position: relative;
+		}
+		.image {
+		  opacity: 1;
+		  display: block;
+		  height: auto;
+		  transition: .5s ease;
+		  backface-visibility: hidden;
+		}
+		.middle {
+		  transition: .5s ease;
+		  opacity: 0;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  text-align: center;
+		}
+		.container:hover .image {
+		  opacity: 0.3;
+		}
+		.container:hover .middle {
+		  opacity: 1;
+		}
+		.text {
+		  background-color: #4CAF50;
+		  color: white;
+		  font-size: 16px;
+		  padding: 16px 32px;
+		}
+		h1.footer {
+		  font-family: "Times New Roman", Times, serif;
+		  color: blue
+		}
+		.centered {
+		  text-align: center;
+		}
+		.body {
+		  margin: 0;
+		  font-family: Arial, Helvetica, sans-serif;
+		  position:absolute; 
+		  top:120px; 
+		  bottom:100px; 
+		  left:500px; 
+		  right:500px; 
+		  overflow:auto;
+		  background-repeat: no-repeat;
+		  background-size=500px 500px;
+		}
+		.left-column {
+		  margin: 0;
+		  font-family: Arial, Helvetica, sans-serif;
+		  position:absolute; 
+		  top: 240px;
+		  left:10px; 
+		  overflow:auto;
+		  background-repeat: no-repeat;
+		  background-size=500px 500px;
+		  border-radius:15px;
+		}
+		.right-column {
+		  margin: 0;
+		  font-family: Arial, Helvetica, sans-serif;
+		  position:absolute; 
+		  top: 240px;
+		  right:10px; 
+		  overflow:auto;
+		  background-repeat: no-repeat;
+		  background-size=500px 500px;
+		  border-radius:15px;
+		}
+		.top-container {
+		  background-color: #f1f1f1;
+		  padding: 30px;
+		  text-align: center;
+		}
+		.header {
+		  padding: 10px 16px;
+		  background: #555;
+		  color: #f1f1f1;
+		  position:absolute; 
+		  top:0px; 
+		  left:0px; 
+		  height:120px; 
+		  right:0px;
+		  overflow:hidden;
+		}
+		.content {
+		  padding: 16px;
+		}
+		.sticky {
+		  position: fixed;
+		  top: 0;
+		  width: 100%;
+		}
+		.sticky + .content {
+		  padding-top: 102px;
+		}
+		.footer {
+		   position: fixed;
+		   left: 0;
+		   bottom: 0;
+		   width: 100%;
+		   background-color: red;
+		   color: white;
+		   text-align: center;
+		}
+		.green-container {
+			background-color: #ADD8E6;
+			left:120px; 
+			right:120px; 
+			border-radius:25px;
+		}
+		html {
+		overflow: scroll;
+		overflow-x: hidden;
+		}
+		#cancer {
+		border-radius:25px;
+		}
+		::-webkit-scrollbar {
+		width: 0px; /* remove scrollbar space /
+		background: transparent; / optional: just make scrollbar invisible /
+		}
+		article, aside, figure, footer, header, hgroup, 
+		menu, nav, section { display: block; }
+		#test p {
+			margin-top: 25px;
+			font-size: 21px;
+			text-align: center;
+			animation: fadein 2s;
+			-moz-animation: fadein 2s; /* Firefox */
+			-webkit-animation: fadein 2s; /* Safari and Chrome */
+			-o-animation: fadein 2s; /* Opera */
+		}
+		@keyframes fadein {
+			from {
+				opacity:0;
+			}
+			to {
+				opacity:1;
+			}
+		}
+		@-moz-keyframes fadein { /* Firefox */
+			from {
+				opacity:0;
+			}
+			to {
+				opacity:1;
+			}
+		}
+		@-webkit-keyframes fadein { /* Safari and Chrome */
+			from {
+				opacity:0;
+			}
+			to {
+				opacity:1;
+			}
+		}
+		@-o-keyframes fadein { /* Opera */
+			from {
+				opacity:0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+		</style>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body style="{background-repeat:no-repeat;}" background="https://i.pinimg.com/originals/69/55/d8/6955d843f7c855d28a950faf132a5456.jpg">
+		<div class="w3-container w3-teal centered header">
+			<h1>
+				<b>The Chinese Barrier: The Magnuson Repeal of 1943</b>
+			</h1>
+			<a href="https://www.google.com" class="w3-button w3-blue w3-hover-red w3-round-large">Link1</a>
+			<a href="https://www.google.com" class="w3-button w3-green w3-hover-purple w3-round-large">Link2</a>
+			<a href="https://www.google.com" class="w3-button w3-yellow w3-hover-white w3-round-large">Link3</a>
+			<a href="https://www.google.com" class="w3-button w3-gray w3-hover-white w3-round-large">Link4</a>
+			<a href="https://www.google.com" class="w3-button w3-black w3-hover-blue w3-round-large">Link5</a>
+		</div>
+		<div id="test" class="container left-column">
+		  <a href="https://site.nhd.org/47296313/Background">
+			<img src="https://miro.medium.com/max/3840/1*vzGDgzvgt-izFwbBnUYrcQ.jpeg" alt="Avatar" class="image" width="480" height="300">
+		  <div class="middle">
+			<div class="text">Return to Background</div>
+		  </div>
+		  </a>
+		</div>
+		<div class="container right-column">
+		  <a href="https://site.nhd.org/47296313/Short-Term_Impacts">
+			<img src="https://i.ytimg.com/vi/i5OpucBpa94/hqdefault.jpg" alt="Avatar" class="image" width="480" height="250">
+		  <div class="middle">
+			<div class="text">The Short term impacts</div>
+		  </div>
+		  </a>
+		</div>
+		<div class="body centered">
+			<div class="green-container">
+				<h2>
+					<b>Heart of the Story</b>
+				</h2>
+				<h4>The Magnuson Repeal Act is some thing that is very important and should be remembered</h4>
+			</div>
+			<img src="https://sayingimages.com/wp-content/uploads/you-only-rive-once-chinese-meme.png" alt="ASIANS RULE!!!">
+		</div>
+		<div class="w3-container w3-teal centered footer" style="position:absolute; bottom:0px; height:120px; left:0px; right:0px; overflow:hidden;">
+			<h1>
+				<b>This is the Footer</b>
+			</h1>
+			<a href="https://www.google.com" class="w3-button w3-blue w3-hover-red w3-round-large">Link1</a>
+			<a href="https://www.google.com" class="w3-button w3-green w3-hover-purple w3-round-large">Link2</a>
+			<a href="https://www.google.com" class="w3-button w3-yellow w3-hover-white w3-round-large">Link3</a>
+			<a href="https://www.google.com" class="w3-button w3-gray w3-hover-white w3-round-large">Link4</a>
+			<a href="https://www.google.com" class="w3-button w3-black w3-hover-blue w3-round-large">Link5</a>
+		</div>
+	</body>
+</html>
